@@ -1,0 +1,580 @@
+// KittopiaTech - a Kopernicus Visual Editor
+
+@Kopernicus:NEEDS[!Kopernicus]
+{
+	Body
+	{
+		name = Minmus
+		barycenter = False
+		identifier = Minmus
+		finalizeOrbit = False
+		randomMainMenuBody = False
+		contractWeight = 30
+		Properties
+		{
+			description = Minmus is the smallest moon orbiting Kerbin. From the surface of Kerbin, it can be seen on clear days as a tiny blue speck in the sky. It is often mistaken as dirt on telescope lenses or dead pixels, but the top minds at the Kerbal Astronomical Society assure us it is a real moon nevertheless.
+			radius = 60000
+			geeASL = 0.05001708099188
+			mass = 2.64575795662095E+19
+			gravParameter = 1765800026.31247
+			rotates = True
+			rotationPeriod = 40400
+			tidallyLocked = False
+			initialRotation = 230
+			inverseRotThresholdAltitude = 100000
+			albedo = 0.5
+			emissivity = 0.7
+			coreTemperatureOffset = 1
+			timewarpAltitudeLimits = 0 3000 3000 6000 12000 24000 48000 60000
+			sphereOfInfluence = 2247428.3879023
+			solarRotationPeriod = False
+			navballSwitchRadiusMult = 0.06
+			navballSwitchRadiusMultLow = 0.055
+			biomeMap = BUILTIN/minmus_biome
+			nonExactThreshold = -1
+			exactSearch = False
+			useTheInName = False
+			displayName = Minmus^N
+			selectable = True
+			RnDVisibility = VISIBLE
+			RnDRotation = False
+			maxZoom = 60000
+			ScienceValues
+			{
+				landedDataValue = 5 // Science multipler for landed science.
+				splashedDataValue = 1 // Science multipler for splashed down science.
+				flyingLowDataValue = 1 // Science multipler for flying low science.
+				flyingHighDataValue = 1 // Science multipler for flying high science.
+				inSpaceLowDataValue = 4 // Science multipler for in space low science.
+				inSpaceHighDataValue = 2.5 // Science multipler for in space high science.
+				recoveryValue = 2.5
+				flyingAltitudeThreshold = 18000 // Altitude when "flying at <body>" transistions from/to "from <body>'s upper atmosphere"
+				spaceAltitudeThreshold = 30000 // Altitude when "in space low" transistions from/to "in space high"
+			}
+			Biomes
+			{
+				Value
+				{
+					name = Highlands // The name of this biome.
+					displayName = Highlands // The displayed name of the biome. Can be a localization tag.
+					value = 0 // A value that gets multiplied with every amount of science that is returned in the biome.
+					color = 0.380392164,0.513725519,0.509803951,1 // The color of the biome on the biome map.
+				}
+				Value
+				{
+					name = Midlands // The name of this biome.
+					displayName = Midlands // The displayed name of the biome. Can be a localization tag.
+					value = 0 // A value that gets multiplied with every amount of science that is returned in the biome.
+					color = 0.529411793,0.670588255,0.615686297,1 // The color of the biome on the biome map.
+				}
+				Value
+				{
+					name = Lowlands // The name of this biome.
+					displayName = Lowlands // The displayed name of the biome. Can be a localization tag.
+					value = 0 // A value that gets multiplied with every amount of science that is returned in the biome.
+					color = 0.690196097,0.882352948,0.807843149,1 // The color of the biome on the biome map.
+				}
+				Value
+				{
+					name = Flats // The name of this biome.
+					displayName = Flats // The displayed name of the biome. Can be a localization tag.
+					value = 0 // A value that gets multiplied with every amount of science that is returned in the biome.
+					color = 0.752941191,1,0.905882359,1 // The color of the biome on the biome map.
+				}
+				Value
+				{
+					name = Great Flats // The name of this biome.
+					displayName = Great Flats // The displayed name of the biome. Can be a localization tag.
+					value = 0 // A value that gets multiplied with every amount of science that is returned in the biome.
+					color = 0.411764711,0.760784328,0.737254918,1 // The color of the biome on the biome map.
+				}
+				Value
+				{
+					name = Greater Flats // The name of this biome.
+					displayName = Greater Flats // The displayed name of the biome. Can be a localization tag.
+					value = 0 // A value that gets multiplied with every amount of science that is returned in the biome.
+					color = 0.647058845,0.843137264,0.850980401,1 // The color of the biome on the biome map.
+				}
+				Value
+				{
+					name = Lesser Flats // The name of this biome.
+					displayName = Lesser Flats // The displayed name of the biome. Can be a localization tag.
+					value = 0 // A value that gets multiplied with every amount of science that is returned in the biome.
+					color = 0.545098066,0.831372559,0.811764717,1 // The color of the biome on the biome map.
+				}
+				Value
+				{
+					name = Poles // The name of this biome.
+					displayName = Poles // The displayed name of the biome. Can be a localization tag.
+					value = 0 // A value that gets multiplied with every amount of science that is returned in the biome.
+					color = 1,1,1,1 // The color of the biome on the biome map.
+				}
+				Value
+				{
+					name = Slopes // The name of this biome.
+					displayName = Slopes // The displayed name of the biome. Can be a localization tag.
+					value = 0 // A value that gets multiplied with every amount of science that is returned in the biome.
+					color = 0.600000024,0.800000012,0.733333349,1 // The color of the biome on the biome map.
+				}
+			}
+		}
+		Orbit
+		{
+			referenceBody = Kerbin // The body that this body is orbiting around.
+			inclination = 6
+			eccentricity = 0
+			semiMajorAxis = 47000000 // The altitude of the highest point in the orbit
+			longitudeOfAscendingNode = 78 // The position of the highest point on the orbit circle
+			argumentOfPeriapsis = 38
+			meanAnomalyAtEpoch = 0.899999976158142
+			meanAnomalyAtEpochD = 51.5662001957363
+			epoch = 0
+			color = 0.556862772,0.454901963,0.627451003,0.501960814 // The color of the orbit line in the Tracking Station
+			nodeColor = 0.556862772,0.454901963,0.627451003,0.501960814 // The color of the circle that marks the planets current position on the orbit
+			mode = REDRAW_AND_RECALCULATE
+			icon = ALL
+			cameraSmaRatioBounds = 0.12 12
+		}
+		ScaledVersion
+		{
+			type = Vacuum
+			fadeStart = 135000
+			fadeEnd = 140000
+			sphericalModel = False
+			deferMesh = False
+			Material
+			{
+				color = 0.634328365,0.634328365,0.634328365,1
+				specColor = 0.119403005,0.119403005,0.119403005,1
+				shininess = 0.03
+				texture = BUILTIN/NewMunSurfaceMap00
+				normals = BUILTIN/NewMunSurfaceMap01
+				opacity = 1
+			}
+		}
+		PQS
+		{
+			minLevel = 2
+			maxLevel = 7
+			minDetailDistance = 8
+			maxQuadLengthsPerFrame = 0.03
+			fadeStart = 140000
+			fadeEnd = 145000
+			deactivateAltitude = 180000
+			mapMaxHeight = 4000
+			materialType = Vacuum
+			PhysicsMaterial
+			{
+				bounceCombine = Average
+				frictionCombine = Maximum
+				bounciness = 0
+				staticFriction = 0.8
+				dynamicFriction = 0.6
+			}
+			Material
+			{
+				saturation = 1
+				contrast = 3
+				tintColor = 1,1,1,0
+				texTiling = 1024
+				texPower = 0.75
+				multiPower = 0.75
+				groundTexStart = 0
+				groundTexEnd = 5000
+				steepTiling = 10
+				steepPower = 1.65
+				steepTexStart = 60000
+				steepTexEnd = 100000
+				deepTex = BUILTIN/terrain_sand00
+				deepMultiTex = BUILTIN/terrain_sand00
+				deepMultiFactor = 8
+				mainTex = BUILTIN/terrain_sand00
+				mainMultiTex = BUILTIN/terrain_sand00
+				mainMultiFactor = 10
+				highTex = BUILTIN/terrain_sand00
+				highMultiTex = BUILTIN/terrain_sand00
+				highMultiFactor = 12
+				snowTex = BUILTIN/terrain_sand00
+				snowMultiTex = BUILTIN/terrain_sand00
+				snowMultiFactor = 14
+				steepTex = BUILTIN/terrain_sand00
+				deepStart = 0
+				deepEnd = 0.01
+				mainLoStart = 0
+				mainLoEnd = 0.05
+				mainHiStart = 0.1
+				mainHiEnd = 0.15
+				hiLoStart = 0.1
+				hiLoEnd = 0.15
+				hiHiStart = 0.2
+				hiHiEnd = 0.25
+				snowStart = 0.2
+				snowEnd = 0.25
+				planetOpacity = 1
+			}
+			FallbackMaterial
+			{
+				saturation = 1
+				contrast = 3
+				tintColor = 1,1,1,0
+				texTiling = 1024
+				texPower = 0.75
+				multiPower = 0.75
+				groundTexStart = 0
+				groundTexEnd = 5000
+				multiFactor = 0.5
+				mainTex = BUILTIN/terrain_sand00
+				planetOpacity = 0
+			}
+			Mods
+			{
+				AltitudeAlpha
+				{
+					atmosphereDepth = 8000
+					invert = False
+					order = 999999999
+					enabled = True
+					name = _Material_ModProjection
+				}
+				VertexPlanet
+				{
+					buildHeightColors = False
+					colorDeformity = 6000
+					deformity = 5000
+					oceanDepth = 0
+					oceanLevel = 0
+					oceanSnap = False
+					oceanStep = 0
+					seed = 23123
+					terrainRidgeBalance = 0.1
+					terrainRidgesMax = 1
+					terrainRidgesMin = 0.4
+					terrainShapeEnd = -2
+					terrainShapeStart = 2
+					terrainSmoothing = 0.100000001490116
+					order = 100
+					enabled = True
+					name = VertexPlanet
+					ContinentalSimplex
+					{
+						deformity = 1
+						frequency = 1
+						octaves = 10
+						persistance = 0.400000005960464
+						seed = 0
+					}
+					RuggednessSimplex
+					{
+						deformity = 1
+						frequency = 0.5
+						octaves = 4
+						persistance = 0.5
+						seed = 0
+					}
+					SharpnessNoise
+					{
+						deformity = 0.00100000004749745
+						frequency = 0.5
+						octaves = 4
+						persistance = 0.5
+						seed = 0
+						Noise:RidgedMultifractal
+						{
+							frequency = 0.5
+							lacunarity = 0.5
+							quality = High
+							octaves = 4
+							seed = 23126
+						}
+					}
+					SharpnessSimplexMap
+					{
+						deformity = 50
+						frequency = 1.5
+						octaves = 4
+						persistance = 0.550000011920929
+						seed = 0
+					}
+					LandClasses
+					{
+						Value
+						{
+							name = AbyPl
+							baseColor = 0.529293835,0.716417909,0.642553151,1
+							colorNoise = 0.492314547,0.776119411,0.664091229,1
+							colorNoiseAmount = 0.200000002980232
+							fractalEnd = 0.00100000004749745
+							fractalStart = 0
+							lerpToNext = True
+							fractalDelta = 0.00100000004749745
+							endHeight = 0
+							startHeight = 0
+							delete = False
+							SimplexNoiseMap
+							{
+								deformity = 1
+								frequency = 4
+								octaves = 4
+								persistance = 0.600000023841858
+								seed = 0
+							}
+						}
+						Value
+						{
+							name = Beach
+							baseColor = 0.625529051,0.776119411,0.719253123,1
+							colorNoise = 0.332423717,0.350746274,0.333064348,1
+							colorNoiseAmount = 0.200000002980232
+							fractalEnd = 0.449999988079071
+							fractalStart = 0.00100000004749745
+							lerpToNext = True
+							fractalDelta = 0.448999988031574
+							endHeight = 0
+							startHeight = 0
+							delete = False
+							SimplexNoiseMap
+							{
+								deformity = 1
+								frequency = 4
+								octaves = 4
+								persistance = 0.600000023841858
+								seed = 0
+							}
+						}
+						Value
+						{
+							name = Grass
+							baseColor = 0.710904419,0.828358173,0.715011179,1
+							colorNoise = 0.5,0.5,0.425373137,1
+							colorNoiseAmount = 0.300000011920929
+							fractalEnd = 0.899999976158142
+							fractalStart = 0.449999988079071
+							lerpToNext = True
+							fractalDelta = 0.449999988079071
+							endHeight = 0
+							startHeight = 0
+							delete = False
+							SimplexNoiseMap
+							{
+								deformity = 1
+								frequency = 3
+								octaves = 4
+								persistance = 0.600000023841858
+								seed = 0
+							}
+						}
+						Value
+						{
+							name = Snow
+							baseColor = 0.250612617,0.335820913,0.278618157,1
+							colorNoise = 0.430215567,0.432835817,0.339162409,1
+							colorNoiseAmount = 0.400000005960464
+							fractalEnd = 2
+							fractalStart = 0.899999976158142
+							lerpToNext = False
+							fractalDelta = 1.10000002384186
+							endHeight = 0
+							startHeight = 0
+							delete = False
+							SimplexNoiseMap
+							{
+								deformity = 1
+								frequency = 2
+								octaves = 4
+								persistance = 0.600000023841858
+								seed = 0
+							}
+						}
+					}
+					TerrainTypeSimplex
+					{
+						deformity = 1
+						frequency = 4
+						octaves = 12
+						persistance = 0.7
+						seed = 0
+					}
+				}
+				LandControl
+				{
+					altitudeBlend = 0
+					altitudeFrequency = 1
+					altitudeOctaves = 1
+					altitudePersistance = 1
+					altitudeSeed = 1
+					createColors = True
+					createScatter = True
+					latitudeBlend = 0
+					latitudeFrequency = 1
+					latitudeOctaves = 1
+					latitudePersistance = 1
+					latitudeSeed = 1
+					longitudeBlend = 0
+					longitudeFrequency = 1
+					longitudeOctaves = 1
+					longitudePersistance = 1
+					longitudeSeed = 1
+					useHeightMap = False
+					vHeightMax = 10000
+					order = 999999
+					enabled = True
+					name = Scatter
+					Scatters
+					{
+						Value
+						{
+							materialType = DiffuseWrapped
+							mesh = BUILTIN/boulder
+							castShadows = False
+							densityFactor = 1
+							material = BUILTIN/scatter_rock_minmus
+							maxCache = 512
+							maxCacheDelta = 32
+							maxLevelOffset = 0
+							maxScale = 3
+							maxScatter = 20
+							maxSpeed = 1000
+							minScale = 0.5
+							recieveShadows = False
+							name = Rock00
+							seed = 231123
+							verticalOffset = 0
+							delete = False
+							Material
+							{
+								mainTex = BUILTIN/rock00
+								color = 0.227201387,0.286764681,0.219290644,0.686274529
+								diff = 0.6
+							}
+						}
+					}
+					LandClasses
+					{
+						Value
+						{
+							alterApparentHeight = 0
+							alterRealHeight = 0
+							color = 0,0,0,0
+							coverageBlend = 0
+							coverageFrequency = 1
+							coverageOctaves = 1
+							coveragePersistance = 1
+							coverageSeed = 1
+							name = Base
+							latDelta = 1
+							latitudeDouble = False
+							lonDelta = 1
+							minimumRealHeight = 0
+							noiseBlend = 0
+							noiseColor = 0,0,0,0
+							noiseFrequency = 1
+							noiseOctaves = 1
+							noisePersistance = 1
+							noiseSeed = 1
+							delete = False
+							altitudeRange
+							{
+								endEnd = 1
+								endStart = 1
+								startEnd = 0
+								startStart = 0
+							}
+							latitudeDoubleRange
+							{
+								endEnd = 1
+								endStart = 1
+								startEnd = 0
+								startStart = 0
+							}
+							latitudeRange
+							{
+								endEnd = 1
+								endStart = 1
+								startEnd = 0
+								startStart = 0
+							}
+							longitudeRange
+							{
+								endEnd = 2
+								endStart = 2
+								startEnd = -1
+								startStart = -1
+							}
+							Scatters
+							{
+								Value
+								{
+									density = 1
+									scatterName = Rock00
+									delete = False
+								}
+							}
+						}
+					}
+				}
+				City
+				{
+					debugOrientated = False
+					frameDelta = 1
+					randomizeOnSphere = False
+					reorientToSphere = True
+					reorientFinalAngle = 67.65
+					reorientInitialUp = 0,1,0
+					repositionRadial = 1666,1470,2891
+					repositionRadiusOffset = -1
+					repositionToSphere = True
+					repositionToSphereSurface = True
+					repositionToSphereSurfaceAddHeight = True
+					commnetStation = False
+					isKSC = False
+					order = 100
+					enabled = True
+					name = Monolith00
+					LOD
+					{
+						Value
+						{
+							visibleRange = 10000
+							scale = 0,0,0
+							delete = False
+						}
+					}
+				}
+				City
+				{
+					debugOrientated = False
+					frameDelta = 1
+					randomizeOnSphere = True
+					reorientToSphere = True
+					reorientFinalAngle = 45
+					reorientInitialUp = 0,1,0
+					repositionRadial = 513856,-290549,-122798
+					repositionRadiusOffset = 2948.5
+					repositionToSphere = True
+					repositionToSphereSurface = True
+					repositionToSphereSurfaceAddHeight = False
+					commnetStation = False
+					isKSC = False
+					order = 100
+					enabled = True
+					name = Randolith
+					LOD
+					{
+						Value
+						{
+							visibleRange = 10000
+							scale = 0,0,0
+							delete = False
+						}
+					}
+				}
+			}
+		}
+		Debug
+		{
+			exportMesh = True // Whether Kopernicus should save a .bin file with the ScaledSpace mesh.
+			update = False // Setting this to true will force Kopernicus to update the ScaledSpace mesh.
+			showSOI = False
+		}
+	}
+}

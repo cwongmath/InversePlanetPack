@@ -1,0 +1,389 @@
+// KittopiaTech - a Kopernicus Visual Editor
+
+@Kopernicus:NEEDS[!Kopernicus]
+{
+	Body
+	{
+		name = Gilly
+		barycenter = False
+		identifier = Gilly
+		finalizeOrbit = False
+		randomMainMenuBody = False
+		contractWeight = 30
+		Properties
+		{
+			description = Gilly is a lumpy rock wandering around the orbit of Eve. It’s by far the smallest natural satellite that the Kerbal Astronomical Society has discovered.Due to the large amount of squinting and eye strain associated with its discovery, wearing glasses has now become synonymous with being an accomplished Astronomer.
+			radius = 13000
+			geeASL = 0.00500170791285985
+			mass = 1.24203632781093E+17
+			gravParameter = 8289449.81471635
+			rotates = True
+			rotationPeriod = 28255
+			tidallyLocked = False
+			initialRotation = 5
+			inverseRotThresholdAltitude = 100000
+			albedo = 0.15
+			emissivity = 0.85
+			coreTemperatureOffset = 20
+			timewarpAltitudeLimits = 0 8000 8000 8000 20000 40000 80000 100000
+			sphereOfInfluence = 126123.271704568
+			solarRotationPeriod = False
+			navballSwitchRadiusMult = 0.06
+			navballSwitchRadiusMultLow = 0.055
+			biomeMap = BUILTIN/gilly_biome
+			nonExactThreshold = -1
+			exactSearch = False
+			useTheInName = False
+			displayName = Gilly^N
+			selectable = True
+			RnDVisibility = VISIBLE
+			RnDRotation = False
+			maxZoom = 60000
+			ScienceValues
+			{
+				landedDataValue = 9 // Science multipler for landed science.
+				splashedDataValue = 1 // Science multipler for splashed down science.
+				flyingLowDataValue = 1 // Science multipler for flying low science.
+				flyingHighDataValue = 1 // Science multipler for flying high science.
+				inSpaceLowDataValue = 8 // Science multipler for in space low science.
+				inSpaceHighDataValue = 6 // Science multipler for in space high science.
+				recoveryValue = 6
+				flyingAltitudeThreshold = 18000 // Altitude when "flying at <body>" transistions from/to "from <body>'s upper atmosphere"
+				spaceAltitudeThreshold = 6000 // Altitude when "in space low" transistions from/to "in space high"
+			}
+			Biomes
+			{
+				Value
+				{
+					name = Midlands // The name of this biome.
+					displayName = Midlands // The displayed name of the biome. Can be a localization tag.
+					value = 0 // A value that gets multiplied with every amount of science that is returned in the biome.
+					color = 0.796078444,0.631372571,0.36470589,1 // The color of the biome on the biome map.
+				}
+				Value
+				{
+					name = Lowlands // The name of this biome.
+					displayName = Lowlands // The displayed name of the biome. Can be a localization tag.
+					value = 0 // A value that gets multiplied with every amount of science that is returned in the biome.
+					color = 0.647058845,0.505882382,0.278431386,1 // The color of the biome on the biome map.
+				}
+				Value
+				{
+					name = Highlands // The name of this biome.
+					displayName = Highlands // The displayed name of the biome. Can be a localization tag.
+					value = 0 // A value that gets multiplied with every amount of science that is returned in the biome.
+					color = 0.917647064,0.792156875,0.588235319,1 // The color of the biome on the biome map.
+				}
+			}
+		}
+		Orbit
+		{
+			referenceBody = Eve // The body that this body is orbiting around.
+			inclination = 12
+			eccentricity = 0.550000011920929
+			semiMajorAxis = 31500000 // The altitude of the highest point in the orbit
+			longitudeOfAscendingNode = 80 // The position of the highest point on the orbit circle
+			argumentOfPeriapsis = 10
+			meanAnomalyAtEpoch = 0.899999976158142
+			meanAnomalyAtEpochD = 51.5662001957363
+			epoch = 0
+			color = 0.635294139,0.494117647,0.431372553,0.501960814 // The color of the orbit line in the Tracking Station
+			nodeColor = 0.635294139,0.494117647,0.431372553,0.501960814 // The color of the circle that marks the planets current position on the orbit
+			mode = REDRAW_AND_RECALCULATE
+			icon = ALL
+			cameraSmaRatioBounds = 0.12 12
+		}
+		ScaledVersion
+		{
+			type = Vacuum
+			fadeStart = 135000
+			fadeEnd = 140000
+			sphericalModel = False
+			deferMesh = False
+			Material
+			{
+				color = 1,1,1,1
+				specColor = 0,0,0,1
+				shininess = 1
+				texture = BUILTIN/evemoon100
+				normals = BUILTIN/evemoon101
+				opacity = 1
+			}
+		}
+		PQS
+		{
+			minLevel = 2
+			maxLevel = 7
+			minDetailDistance = 8
+			maxQuadLengthsPerFrame = 0.03
+			fadeStart = 140000
+			fadeEnd = 145000
+			deactivateAltitude = 180000
+			mapMaxHeight = 9000
+			materialType = Vacuum
+			PhysicsMaterial
+			{
+				bounceCombine = Average
+				frictionCombine = Maximum
+				bounciness = 0
+				staticFriction = 0.8
+				dynamicFriction = 0.6
+			}
+			Material
+			{
+				saturation = 1
+				contrast = 1
+				tintColor = 1,1,1,0
+				texTiling = 80
+				texPower = 0.75
+				multiPower = 0.75
+				groundTexStart = 0
+				groundTexEnd = 20000
+				steepTiling = 10
+				steepPower = 0.76
+				steepTexStart = 200000
+				steepTexEnd = 300000
+				deepTex = BUILTIN/RockyGround
+				deepMultiTex = BUILTIN/distantground
+				deepMultiFactor = 8
+				mainTex = BUILTIN/RockyGround
+				mainMultiTex = BUILTIN/distantground
+				mainMultiFactor = 10
+				highTex = BUILTIN/RockyGround
+				highMultiTex = BUILTIN/distantground
+				highMultiFactor = 12
+				snowTex = BUILTIN/RockyGround
+				snowMultiTex = BUILTIN/distantground
+				snowMultiFactor = 14
+				steepTex = BUILTIN/terrain_rock00
+				deepStart = 0
+				deepEnd = 0.01
+				mainLoStart = 0
+				mainLoEnd = 0.05
+				mainHiStart = 0.1
+				mainHiEnd = 0.15
+				hiLoStart = 0.1
+				hiLoEnd = 0.15
+				hiHiStart = 0.2
+				hiHiEnd = 0.25
+				snowStart = 0.2
+				snowEnd = 0.25
+				planetOpacity = 1
+			}
+			FallbackMaterial
+			{
+				saturation = 1
+				contrast = 1
+				tintColor = 1,1,1,0
+				texTiling = 80
+				texPower = 0.75
+				multiPower = 0.75
+				groundTexStart = 0
+				groundTexEnd = 20000
+				multiFactor = 0.5
+				mainTex = BUILTIN/RockyGround
+				planetOpacity = 1
+			}
+			Mods
+			{
+				VertexSimplexHeightAbsolute
+				{
+					deformity = 8000
+					frequency = 0.5
+					octaves = 3
+					persistence = 0.5
+					seed = 12
+					order = 10
+					enabled = True
+					name = _Height
+				}
+				VertexHeightNoise
+				{
+					deformity = 150
+					frequency = 4
+					octaves = 6
+					persistence = 0.5
+					seed = 111111112
+					noiseType = RiggedMultifractal
+					mode = Low
+					lacunarity = 2.5
+					order = 19
+					enabled = True
+					name = _Height
+				}
+				AltitudeAlpha
+				{
+					atmosphereDepth = 8000
+					invert = False
+					order = 999999999
+					enabled = True
+					name = _Material_ModProjection
+				}
+				VertexSimplexNoiseColor
+				{
+					blend = 1
+					colorStart = 0.641791046,0.51597774,0.488527536,1
+					colorEnd = 0.291044772,0.273304433,0.216757119,1
+					frequency = 1
+					octaves = 8
+					persistence = 0.5
+					seed = 111453
+					order = 100
+					enabled = True
+					name = _Color
+				}
+				LandControl
+				{
+					altitudeBlend = 0
+					altitudeFrequency = 1
+					altitudeOctaves = 1
+					altitudePersistance = 1
+					altitudeSeed = 1
+					createColors = True
+					createScatter = True
+					latitudeBlend = 0
+					latitudeFrequency = 1
+					latitudeOctaves = 1
+					latitudePersistance = 1
+					latitudeSeed = 1
+					longitudeBlend = 0
+					longitudeFrequency = 1
+					longitudeOctaves = 1
+					longitudePersistance = 1
+					longitudeSeed = 1
+					useHeightMap = False
+					vHeightMax = 10000
+					order = 999999
+					enabled = True
+					name = Scatter
+					Scatters
+					{
+						Value
+						{
+							materialType = BumpedDiffuse
+							mesh = BUILTIN/boulder
+							castShadows = False
+							densityFactor = 1
+							material = BUILTIN/brown_cliff
+							maxCache = 512
+							maxCacheDelta = 32
+							maxLevelOffset = 0
+							maxScale = 3
+							maxScatter = 20
+							maxSpeed = 1000
+							minScale = 0.5
+							recieveShadows = False
+							name = boulder
+							seed = 231123
+							verticalOffset = 0
+							delete = False
+							Material
+							{
+								color = 1,1,1,1
+								mainTex = BUILTIN/brown_cliff
+								bumpMap = BUILTIN/bouldernormal
+							}
+						}
+					}
+					LandClasses
+					{
+						Value
+						{
+							alterApparentHeight = 0
+							alterRealHeight = 0
+							color = 0,0,0,0
+							coverageBlend = 0
+							coverageFrequency = 1
+							coverageOctaves = 1
+							coveragePersistance = 1
+							coverageSeed = 1
+							name = Base
+							latDelta = 1
+							latitudeDouble = False
+							lonDelta = 1
+							minimumRealHeight = 0
+							noiseBlend = 0
+							noiseColor = 0,0,0,0
+							noiseFrequency = 1
+							noiseOctaves = 1
+							noisePersistance = 1
+							noiseSeed = 1
+							delete = False
+							altitudeRange
+							{
+								endEnd = 1
+								endStart = 1
+								startEnd = 0
+								startStart = 0
+							}
+							latitudeDoubleRange
+							{
+								endEnd = 1
+								endStart = 1
+								startEnd = 0
+								startStart = 0
+							}
+							latitudeRange
+							{
+								endEnd = 1
+								endStart = 1
+								startEnd = 0
+								startStart = 0
+							}
+							longitudeRange
+							{
+								endEnd = 2
+								endStart = 2
+								startEnd = -1
+								startStart = -1
+							}
+							Scatters
+							{
+								Value
+								{
+									density = 1
+									scatterName = boulder
+									delete = False
+								}
+							}
+						}
+					}
+				}
+				City
+				{
+					debugOrientated = False
+					frameDelta = 1
+					randomizeOnSphere = True
+					reorientToSphere = True
+					reorientFinalAngle = 45
+					reorientInitialUp = 0,1,0
+					repositionRadial = 513856,-290549,-122798
+					repositionRadiusOffset = 2948.5
+					repositionToSphere = True
+					repositionToSphereSurface = True
+					repositionToSphereSurfaceAddHeight = False
+					commnetStation = False
+					isKSC = False
+					order = 100
+					enabled = True
+					name = Randolith
+					LOD
+					{
+						Value
+						{
+							visibleRange = 10000
+							scale = 0,0,0
+							delete = False
+						}
+					}
+				}
+			}
+		}
+		Debug
+		{
+			exportMesh = True // Whether Kopernicus should save a .bin file with the ScaledSpace mesh.
+			update = False // Setting this to true will force Kopernicus to update the ScaledSpace mesh.
+			showSOI = False
+		}
+	}
+}
